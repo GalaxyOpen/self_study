@@ -12,3 +12,5 @@ VScode, R, R Studio 설치
 
 250401 구리가격 예측 코드(10년치)
 250402 Prophet 모델 
+
+250404 https://github.com/mukeshsharma99/Industrial-Copper-Modeling 깃허브를 통해 구리 가격 예측 모델 내용 학습함. 
