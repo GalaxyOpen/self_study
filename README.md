@@ -17,6 +17,7 @@ VScode, R, R Studio 설치 <br>
 250404 https://github.com/open-mmlab/mmdetection.git 깃허브를 통해 마찬가지로 구리 가격 예측 모델을 학습해보려고 했으나 실패. <br> 
 
 250407 토요일 컨설팅 정리 내용 <br>
+
 ### 1. 구글에 검색을 해볼 때에는 Awesome이라는 단어를 붙여본다. 
   - ex : Awesome Timeseries Forecasting (구글 검색)
 
@@ -42,3 +43,5 @@ VScode, R, R Studio 설치 <br>
 
 ### 8. 파이캐럿 ( 현재 많이 사용중인 API )
   - https://preservsun.tistory.com/entry/Pycaret-%EC%84%A4%EC%B9%98-%EC%BD%94%EB%93%9C-%ED%8C%8C%EC%9D%B4%EC%8D%ACpython-AutoML-%EA%B5%AC%ED%98%84-%EC%98%88%EC%A0%9C
+
+250408 ARIMA, SARIMA, SARIMAX, VARIMA, VARIMAX 학습 및 공부 중
