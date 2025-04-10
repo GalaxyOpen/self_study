@@ -44,4 +44,5 @@ VScode, R, R Studio 설치 <br>
 ### 8. 파이캐럿 ( 현재 많이 사용중인 API )
   - https://preservsun.tistory.com/entry/Pycaret-%EC%84%A4%EC%B9%98-%EC%BD%94%EB%93%9C-%ED%8C%8C%EC%9D%B4%EC%8D%ACpython-AutoML-%EA%B5%AC%ED%98%84-%EC%98%88%EC%A0%9C
 
-250408 ARIMA, SARIMA, SARIMAX, VARIMA, VARIMAX 학습 및 공부 중
+250408 ARIMA, SARIMA, SARIMAX, VARIMA, VARIMAX 학습 및 공부 중 <br>
+250410 로봇 어드바이져 개요 <br>
