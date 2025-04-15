@@ -46,3 +46,4 @@ VScode, R, R Studio 설치 <br>
 
 250408 ARIMA, SARIMA, SARIMAX, VARIMA, VARIMAX 학습 및 공부 중 <br>
 250410 로봇 어드바이져 개요 <br>
+250415 원자재 수요 가격 맞춰보기(+크롤링) <br>
