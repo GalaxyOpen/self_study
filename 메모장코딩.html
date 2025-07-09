@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>업무 달력</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      text-align: center;
+      padding: 10px;
+      height: 80px;
+      vertical-align: top;
+      cursor: pointer;
+      white-space: pre-wrap; /* 줄바꿈 허용 */
+    }
+    th {
+      background-color: #f0f0f0;
+    }
+  </style>
+  <script>
+    function loadMemos() {
+      for (let day = 1; day <= 31; day++) {
+        const saved = localStorage.getItem("memo-" + day);
+        if (saved) {
+          document.getElementById("day-" + day).innerText = day + "\n" + saved;
+        }
+      }
+    }
+
+    function addMemo(day) {
+      const key = "memo-" + day;
+      const current = localStorage.getItem(key) || "";
+      const input = prompt(day + "일 업무 메모:", current);
+      if (input !== null) {
+        localStorage.setItem(key, input);
+        document.getElementById("day-" + day).innerText = day + "\n" + input;
+      }
+    }
+
+    window.onload = loadMemos;
+  </script>
+</head>
+<body>
+  <h1>7월 업무 달력</h1>
+  <table>
+    <tr>
+      <th>일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th>
+    </tr>
+    <tr>
+      <td></td><td></td><td id="day-1" onclick="addMemo(1)">1</td><td id="day-2" onclick="addMemo(2)">2</td><td id="day-3" onclick="addMemo(3)">3</td><td id="day-4" onclick="addMemo(4)">4</td><td id="day-5" onclick="addMemo(5)">5</td>
+    </tr>
+    <tr>
+      <td id="day-6" onclick="addMemo(6)">6</td><td id="day-7" onclick="addMemo(7)">7</td><td id="day-8" onclick="addMemo(8)">8</td><td id="day-9" onclick="addMemo(9)">9</td><td id="day-10" onclick="addMemo(10)">10</td><td id="day-11" onclick="addMemo(11)">11</td><td id="day-12" onclick="addMemo(12)">12</td>
+    </tr>
+    <tr>
+      <td id="day-13" onclick="addMemo(13)">13</td><td id="day-14" onclick="addMemo(14)">14</td><td id="day-15" onclick="addMemo(15)">15</td><td id="day-16" onclick="addMemo(16)">16</td><td id="day-17" onclick="addMemo(17)">17</td><td id="day-18" onclick="addMemo(18)">18</td><td id="day-19" onclick="addMemo(19)">19</td>
+    </tr>
+    <tr>
+      <td id="day-20" onclick="addMemo(20)">20</td><td id="day-21" onclick="addMemo(21)">21</td><td id="day-22" onclick="addMemo(22)">22</td><td id="day-23" onclick="addMemo(23)">23</td><td id="day-24" onclick="addMemo(24)">24</td><td id="day-25" onclick="addMemo(25)">25</td><td id="day-26" onclick="addMemo(26)">26</td>
+    </tr>
+    <tr>
+      <td id="day-27" onclick="addMemo(27)">27</td><td id="day-28" onclick="addMemo(28)">28</td><td id="day-29" onclick="addMemo(29)">29</td><td id="day-30" onclick="addMemo(30)">30</td><td id="day-31" onclick="addMemo(31)">31</td><td></td><td></td>
+    </tr>
+  </table>
+</body>
+</html>
